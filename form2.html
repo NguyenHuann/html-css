@@ -12,115 +12,118 @@
       Chào mừng bạn đến với hội của những trái tim đỏ rực, cháy hết mình vì màu
       cờ sắc áo!
     </p>
-    <!-- họ tên -->
+
     <form>
-      <label for="fullname"
-        >Họ và tên (nhập đúng để chúng tôi gọi bạn đi bão nha!:)
-        <br />
-        <input
-          type="text"
-          id="fullname"
-          name="fullname"
-          required
-          placeholder="VD: Nguyễn Văn A"
-          size="30"
-        />
-        <br> <br>
-    <!-- email -->
-        <label for="fullname"
-        >Email
-        <br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="VD: abc@gmail.com"
-          size="30"
-        />
-        <br>
+      <!-- Họ tên -->
+      <label for="fullname">
+        Họ và tên (nhập đúng để chúng tôi gọi bạn đi bão nha! :)
       </label>
-      <br><br>
+      <br />
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        placeholder="VD: Nguyễn Văn A"
+        size="30"
+      />
+      <br /><br />
 
-      <!-- story -->
-       <label for="story">Mô tả cảm xúc của bạn:        
-       </label>
-       <br>
-       <textarea name="story" 
-       id="story" 
-       placeholder="Gõ thật lòng"
-       rows="5"
-       cols="50"
-       spellcheck>
-       </textarea>
+      <!-- Email -->
+      <label for="email">Email</label>
+      <br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="VD: abc@gmail.com"
+        size="30"
+      />
+      <br /><br />
 
-       <br> <br>
+      <!-- Story -->
+      <label for="story">Mô tả cảm xúc của bạn:</label>
+      <br />
+      <textarea
+        name="story"
+        id="story"
+        placeholder="Gõ thật lòng"
+        rows="5"
+        cols="50"
+        spellcheck="true"
+      ></textarea>
+      <br /><br />
 
-       <!-- giới tính -->
+      <!-- Giới tính -->
       <fieldset>
         <legend>Giới tính của bạn</legend>
         <label for="male">
-          <input type="radio" id="male" name="gender" value="male">
+          <input type="radio" id="male" name="gender" value="male" />
           Nam
         </label>
-        <br>
+        <br />
         <label for="female">
-          <input type="radio" id="female" name="gender">
+          <input type="radio" id="female" name="gender" value="female" />
           Nữ
         </label>
-        <br>
+        <br />
         <label for="other">
-          <input type="radio" id="orther" name="gender">
+          <input type="radio" id="other" name="gender" value="other" />
           Khác
         </label>
       </fieldset>
-      <br><br>
-      <!-- vị trí đá yêu thích -->
-       <label for="position">Bạn thích chơi ở vị trí nào nhất</label>
-       <br>
-       <select name="position" id="position">
+      <br /><br />
+
+      <!-- Vị trí -->
+      <label for="position">Bạn thích chơi ở vị trí nào nhất</label>
+      <br />
+      <select name="position" id="position">
         <option value="tiền đạo">Tiền đạo ghi bàn là làm người hùng</option>
         <option value="thủ môn">Thủ môn siêu anh hùng giấu mặt</option>
         <option value="hậu vệ">Hậu vệ chặn mọi pha tấn công</option>
-       </select>
+      </select>
+      <br /><br />
 
-       <br><br>
-       <!-- mức độ fan -->
-        <label for="fan-level">Mức độ fan cuồng (từ 1 tới 10)</label>
-        <br>
-        <input type="number" id="fan-level" name="fan-level" min="1" max="10" step="1">
+      <!-- Fan level -->
+      <label for="fan-level">Mức độ fan cuồng (từ 1 tới 10)</label>
+      <br />
+      <input
+        type="number"
+        id="fan-level"
+        name="fan-level"
+        min="1"
+        max="10"
+        step="1"
+      />
+      <br /><br />
 
-
-        <br><br>
-      <!-- cầu thủ yêu thích -->
-       <label for="favor-player">
-        Cầu thủ yêu thích nhất:
-        <br>
-        <input 
-        type="text"
-        id="favor-player"
-        name="favor-player"
-        list="players">
-       </label>
-       <datalist id="players">
+      <!-- Cầu thủ yêu thích -->
+      <label for="favor-player"> Cầu thủ yêu thích nhất: </label>
+      <br />
+      <input type="text" id="favor-player" name="favor-player" list="players" />
+      <datalist id="players">
         <option value="Quang Hải"></option>
         <option value="Công Phượng"></option>
         <option value="Duy Mạnh"></option>
-       </datalist>
+      </datalist>
+      <br /><br />
 
-       <!-- cam kết -->
-        <br><br>
-        <p><b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa đc tốt</b></p>
-        <label for="agree">Tôi cam kết</label>
-        <input type="checkbox" id="agree" name="agree" checked>
+      <!-- Cam kết -->
+      <p>
+        <b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa được tốt?</b>
+      </p>
+      <label for="agree">Tôi cam kết</label>
+      <input type="checkbox" id="agree" name="agree" checked />
+      <br /><br />
 
-        <!-- nút button -->
-         <br><br>
-         <button type="submit">Gửi đơn (Chuẩn bị đi bão thôi!)</button>
-         <button type="reset"> Xóa hết viết lại</button>
-         <br>
-         <!-- type="button" cho phép chạy model hoặc đoạn code khi bấm vào -->
-         <button type="button"></button>
+      <!-- Nút -->
+      <button type="submit">Gửi đơn (Chuẩn bị đi bão thôi!)</button>
+      <button type="reset">Xóa hết viết lại</button>
+      <br /><br />
+
+      <!-- Ví dụ nút type="button" -->
+      <button type="button">Nút test</button>
     </form>
   </body>
 </html>
