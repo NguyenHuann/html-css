@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Đơn Gia Nhập Hội Fan Cuồng Đội Tuyển Bóng Đá Việt Nam</h1>
+
+    <p>
+      Chào mừng bạn đến với hội của những trái tim đỏ rực, cháy hết mình vì màu
+      cờ sắc áo!
+    </p>
+    <!-- họ tên -->
+    <form>
+      <label for="fullname"
+        >Họ và tên (nhập đúng để chúng tôi gọi bạn đi bão nha!:)
+        <br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          placeholder="VD: Nguyễn Văn A"
+          size="30"
+        />
+        <br> <br>
+    <!-- email -->
+        <label for="fullname"
+        >Email
+        <br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="VD: abc@gmail.com"
+          size="30"
+        />
+        <br>
+      </label>
+      <br><br>
+
+      <!-- story -->
+       <label for="story">Mô tả cảm xúc của bạn:        
+       </label>
+       <br>
+       <textarea name="story" 
+       id="story" 
+       placeholder="Gõ thật lòng"
+       rows="5"
+       cols="50"
+       spellcheck>
+       </textarea>
+
+       <br> <br>
+
+       <!-- giới tính -->
+      <fieldset>
+        <legend>Giới tính của bạn</legend>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male">
+          Nam
+        </label>
+        <br>
+        <label for="female">
+          <input type="radio" id="female" name="gender">
+          Nữ
+        </label>
+        <br>
+        <label for="other">
+          <input type="radio" id="orther" name="gender">
+          Khác
+        </label>
+      </fieldset>
+      <br><br>
+      <!-- vị trí đá yêu thích -->
+       <label for="position">Bạn thích chơi ở vị trí nào nhất</label>
+       <br>
+       <select name="position" id="position">
+        <option value="tiền đạo">Tiền đạo ghi bàn là làm người hùng</option>
+        <option value="thủ môn">Thủ môn siêu anh hùng giấu mặt</option>
+        <option value="hậu vệ">Hậu vệ chặn mọi pha tấn công</option>
+       </select>
+
+       <br><br>
+       <!-- mức độ fan -->
+        <label for="fan-level">Mức độ fan cuồng (từ 1 tới 10)</label>
+        <br>
+        <input type="number" id="fan-level" name="fan-level" min="1" max="10" step="1">
+
+
+        <br><br>
+      <!-- cầu thủ yêu thích -->
+       <label for="favor-player">
+        Cầu thủ yêu thích nhất:
+        <br>
+        <input 
+        type="text"
+        id="favor-player"
+        name="favor-player"
+        list="players">
+       </label>
+       <datalist id="players">
+        <option value="Quang Hải"></option>
+        <option value="Công Phượng"></option>
+        <option value="Duy Mạnh"></option>
+       </datalist>
+
+       <!-- cam kết -->
+        <br><br>
+        <p><b>Bạn có cam kết không quay lưng khi đội tuyển đá chưa đc tốt</b></p>
+        <label for="agree">Tôi cam kết</label>
+        <input type="checkbox" id="agree" name="agree" checked>
+
+        <!-- nút button -->
+    </form>
+  </body>
+</html>
