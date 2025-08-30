@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet</title>
+  </head>
+  <body>
+    <!-- 
+        Để nhanh chóng gõ bộ thẻ, chỉ cần gõ tên thẻ xong nhấn phím tab
+        VD: html
+    -->
+    <html></html>
+    <!-- 
+        Lặp lại - dùng ký tự * 
+        Các bạn thử gõ div*3 và nhấn phím tab
+    -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- 
+        Tạo cấu trúc lồng nhau (tạo thẻ con) - dùng ký tự >
+        Các bạn thử gõ header>nav>ul>li*3 và nhấn phím tab
+    -->
+    <header>
+      <nav>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 
+        Thêm thuộc tính vào thẻ - dùng []
+        Các bạn thử gõ input[type="radio"]*3 và nhấn phím tab
+    -->
+    <input type="ratio" />
+    <input type="ratio" />
+    <input type="ratio" />
+    <!-- 
+        Thêm thuộc tính class - dùng dấu chấm .
+        Các bạn thử gõ .content và nhấn phím tab
+    -->
+    <div class="content"></div>
+    <div class="home"></div>
+    <!-- 
+        Thêm thuộc tính id - dùng dấu #
+        Các bạn thử gõ #content và nhấn phím tab
+    -->
+    <div id="content"></div>
+    <div id="home"></div>
+    <!-- 
+        Tạo ra các phần tử anh em - dùng dấu + 
+        Các bạn thử gõ h1+h2+p và nhấn phím tab
+    -->
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <!-- 
+        Nhóm nội dung - dùng ()
+        Các bạn thử gõ div>(header>ul>li*2>a)+(footer>p) và nhấn phím tab
+    -->
+    div(
+    <header>
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </header>
+    )+(
+    <footer>
+      <p></p>
+    </footer>
+    )
+    <!-- 
+        Mẹo: Các bạn chỉ cần ghi nhớ 2 cụm emmet này là đủ để nhớ hết cú pháp
+        
+        header>nav>ul>(li.navItem>a)*3
+
+        input[name="gender" type="radio"]*3
+    -->
+    <header>
+      <nav>
+        <ul>
+          <li class="navItem"><a href=""></a></li>
+          <li class="navItem"><a href=""></a></li>
+          <li class="navItem"><a href=""></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <input type="ratio" name="gender" />
+    <input type="ratio" name="gender" />
+    <input type="ratio" name="gender" />
+  </body>
+</html>
